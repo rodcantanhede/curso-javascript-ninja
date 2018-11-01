@@ -67,29 +67,24 @@ Crie uma função com as seguintes características:
 */
 
 function quarta(x, y, z) {
-if(x != "" && y == "" && z == "") { 
+if( x != undefined && y === undefined && z === undefined) {
 return x;
-} else if ( y != "" && x == "" && z == "") {
-return y; 
-} else if (z != "" && y == "" && x == "") {
-return z;
-} else if (x != "" && y != "" && z == "") {
+} else if ( x != undefined && y != undefined && z === undefined) {
 return x + y;
-} else if (x != "" && y == "" && z != "") {
-return x + z;
-} else if (x == "" && y != "" && z != "") {
-return y + z;
-} else if( x != "" && y != "" && z != "") {
+} else if (x != undefined && y != undefined && z != undefined) {
 return (x + y) / z;
-} else if (x == "" || y == "" || z == "") {
+} else if (x === undefined && y === undefined && z === undefined) {
 return false;
-} else { 
+} else {
 return null;
 }
+}
+
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
 ?
-quarta ();
-quarta (2);
-quarta (2, 4);
-quarta (2, 4, 6);
+quarta (); //false
+quarta (2); // 2
+quarta (2, 4); // 6
+quarta (2, 4, 3); //3
+quarta (2, undefined, 3) // null
