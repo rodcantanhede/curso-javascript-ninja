@@ -22,7 +22,7 @@ var semval;
 
 function segunda () {
 semval = 10;
-return semval;
+return "O valor da variável agora é " + semval;
 
 // Invoque a função criada acima.
 segunda()
