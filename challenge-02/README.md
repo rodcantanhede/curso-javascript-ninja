@@ -21,15 +21,14 @@ var semval;
 // Crie uma função que adicione um valor à variável criada acima, e retorne a string:
 
 function segunda () {
-semval = O valor da variável agora é VALOR. Onde VALOR é o novo valor da variável.;
+semval = 10;
 return semval;
 
 // Invoque a função criada acima.
 segunda()
 
 // Qual o retorno da função? (Use comentários de bloco).
-O valor da variável agora é VALOR. Onde VALOR é o novo valor da variável.
-/* 
+/* 10 */
 
 /*
 Crie uma função com as seguintes características:
