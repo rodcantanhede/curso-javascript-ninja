@@ -28,7 +28,7 @@ return "O valor da variável agora é " + semval;
 segunda()
 
 // Qual o retorno da função? (Use comentários de bloco).
-/* 10 */
+/*O valor da variável agora é 10 */
 
 /*
 Crie uma função com as seguintes características:
